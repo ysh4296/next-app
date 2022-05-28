@@ -5,7 +5,7 @@ const about: NextPage = () => {
   return (
     <div>
       <NavBar />
-      <p>about us</p>
+      <h1>about us</h1>
     </div>
   );
 };

@@ -1,10 +1,11 @@
-import type { NextPage } from "next";
 import NavBar from "../component/NavBar";
-const Home: NextPage = () => {
+import type { AppProps } from "next/app";
+
+function App({ Component, pageProps }: AppProps) {
   return (
     <div>
-      <NavBar />
-      <h1>hi</h1>
+      <Component {...pageProps} />
+      <span>Hello</span>
       <style jsx global>
         {`
           a {
@@ -14,6 +15,6 @@ const Home: NextPage = () => {
       </style>
     </div>
   );
-};
+}
 
-export default Home;
+export default App;
